@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+
+    width: 400px;
+    height: 350px;
+
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    width: 200px;
+    height: 350px;
+    float: left;
+}
+
+.product h2 {
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.product h1 {
+    color: hsl(212, 21%, 14%);
+    font-size: 25px;
+    font-family: 'Faunces';
+    padding-top: 15px;
+    margin-left: 220px;
+}
+
+p:nth-of-type(1) {
+    padding-top: 15px;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+    margin-left: 220px;
+}
+
+p:nth-of-type(2) {
+    font-size: 25px;
+    font-family: 'Fraunces';
+    font-weight: bolder;
+    color: hsl(158, 36%, 37%);
+
+    float: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+p:nth-of-type(3) {
+    text-decoration: line-through;
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);
+    
+    float: inline-start;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: white;
+    border-radius: 10px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-left: 15px;
+}
+
+button:hover {
+    color: red;
+}
+
+button:active {
+    border: 1px solid black;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align:center;    
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    .product {
+        width: 350px;
+        height: auto;
+        margin-top: 30px;
+        padding-bottom: 25px;
+    }
+    
+    .product img {
+        float: none;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .product h1, p:nth-of-type(1) {
+        margin: auto;
+        margin-left: 18px;
+    }
+
+    button {
+       margin-left: 20px;
+       padding-right: 100px;
+       padding-left: 100px;
+    }
+}
